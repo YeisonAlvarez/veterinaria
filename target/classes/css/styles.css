@@ -1,0 +1,144 @@
+/* Estilo general de la página */
+.root {
+    -fx-background-color: linear-gradient(to top right, #f0f4f8, #d9e2ec); /* Fondo en tonos suaves de azul y gris */
+}
+
+
+.titulo {
+    -fx-text-fill: #00509E; /* Texto azul oscuro */
+    -fx-font-size: 40px; /* Tamaño de fuente */
+    -fx-font-family: 'Arial', sans-serif; /* Fuente sencilla y legible */
+    -fx-padding: 5px 0; /* Espaciado */
+    -fx-font-weight: bold; /* Negrita para destacar */
+}
+
+/* Estilos del ComboBox */
+.combo-box {
+    -fx-background-color: linear-gradient(to top right, #f0f4f8, #d9e2ec); /* Fondo suave */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-border-color: #00509E; /* Borde azul oscuro */
+    -fx-border-width: 1.5px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333; /* Texto gris oscuro */
+}
+
+.combo-box:hover {
+    -fx-background-color: linear-gradient(to bottom right, #e3f2fd, #bbdefb); /* Azul claro al pasar el mouse */
+    -fx-border-color: #007BB8; /* Azul claro para el borde */
+}
+
+/* Estilo para las celdas del ComboBox */
+.combo-box .list-view .cell:hover {
+    -fx-background-color: #007BB8; /* Fondo azul claro en hover */
+    -fx-text-fill: white; /* Texto blanco en hover */
+    -fx-transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilo del ToggleButton cuando no está seleccionado */
+.toggle-button {
+    -fx-background-color: #f0f4f8; /* Fondo claro */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 8px 15px;
+    -fx-border-color: #00509E; /* Borde azul */
+    -fx-border-width: 2px;
+    -fx-text-fill: #00509E; /* Texto azul */
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s ease-in-out, text-fill 0.3s ease-in-out;
+}
+
+/* Estilo del ToggleButton cuando está seleccionado */
+.toggle-button:selected {
+    -fx-background-color: #00509E; /* Fondo azul cuando está seleccionado */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-border-color: #007BB8; /* Borde azul claro */
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.25), 5.0, 0.0, 0.0, 2.0); /* Sombra al seleccionarlo */
+}
+
+/* Efecto hover del ToggleButton */
+.toggle-button:hover {
+    -fx-background-color: #007BB8; /* Azul claro al pasar el mouse */
+    -fx-text-fill: white; /* Texto blanco en hover */
+}
+
+/* Estilo para los Labels */
+.label {
+    -fx-text-fill: #00509E; /* Texto azul oscuro */
+    -fx-font-size: 10px; /* Tamaño de fuente */
+    -fx-font-family: 'Arial', sans-serif; /* Fuente sencilla y legible */
+    -fx-padding: 5px 0; /* Espaciado */
+    -fx-font-weight: bold; /* Negrita para destacar */
+}
+
+/* Estilo para los Labels */
+.subtitulo {
+    -fx-text-fill: #00509E; /* Texto azul oscuro */
+    -fx-font-size: 13px; /* Tamaño de fuente */
+    -fx-font-family: 'Arial', sans-serif; /* Fuente sencilla y legible */
+    -fx-padding: 5px 0; /* Espaciado */
+    -fx-font-weight: bold; /* Negrita para destacar */
+}
+
+/* Estilo para los Labels */
+.precio {
+    -fx-text-fill: #00509E; /* Texto azul oscuro */
+    -fx-font-size: 30px; /* Tamaño de fuente */
+    -fx-font-family: 'Arial', sans-serif; /* Fuente sencilla y legible */
+    -fx-padding: 5px 0; /* Espaciado */
+    -fx-font-weight: bold; /* Negrita para destacar */
+}
+
+
+
+/* Estilos de botones */
+.button {
+    -fx-background-color: #00509E;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s ease-in-out, text-fill 0.3s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: #007BB8;
+    -fx-text-fill: #000000;
+}
+
+/* Fondo de los cuadros de texto con borde sutil */
+.caja-text {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    -fx-border-width: 0.0 0.0 2.0px 0.0;
+    -fx-border-color: linear-gradient(to left bottom, #B0B0B0, #707070); /* Gris */
+    -fx-font-size: 11.0px;
+}
+
+.caja-text:pressed {
+    -fx-border-color: linear-gradient(to left bottom, #00509E, #003366);
+    -fx-border-width: 0.5px 0.5px 3.0px;
+    -fx-transition: border-color 0.3s ease-in-out;
+}
+
+/* Ajuste moderno para las tablas */
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-border-color: linear-gradient(to left bottom, #003366, #007BB8);
+    -fx-border-radius: 5.0px;
+    -fx-border-width: 1.5px;
+}
+
+/* Diseño elegante del DatePicker */
+.date-picker .popup-content .day-cell:hover {
+    -fx-background-color: linear-gradient(to left bottom, #00509E, #007BB8);
+    -fx-text-fill: white;
+    -fx-transition: background-color 0.3s ease-in-out;
+}
+
+/* Sombra para los botones */
+.btn-nuevo, .btn-eliminar, .btn-actualizar {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.25), 10.0, 0.0, 0.0, 2.0); /* Sombra suave */
+}
