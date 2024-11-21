@@ -19,11 +19,19 @@ public class Principal {
 
 	@FXML
 	private Button btnSalir;
+	
+	@FXML
+	private Button btnGestionReportes;
 
 	// Método para manejar la acción del botón "Gestión Clientes"
 	@FXML
 	void btnGestionClientesEvent() {
 		cambiarPantalla("vista/GestionPersona.fxml");
+	}
+	
+	@FXML
+	void btnGestionarReportesEvent() {
+		cambiarPantalla("vista/GestionarReporte.fxml");
 	}
 
 	// Método para manejar la acción del botón "Simular Plan"

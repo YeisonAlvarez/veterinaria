@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.GestionarReportesController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="GESTION DE CLIENTES">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="500.0" prefWidth="800.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+                  <VBox prefHeight="200.0" prefWidth="400.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="Lista afiliados">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="Lista mascotas ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="Lista beneficios">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="Obtener el total de contratos firmados por un ejecutivo">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="Lista de afiliados y sus mascotas">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="Afiliados que tienen mascotas mayores de 5 años">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="Mostrar el total de facturas emitidas por un afiliado">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="HOLA">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="HOLA">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="36.0" prefWidth="400.0" styleClass="subtitulo" stylesheets="@../css/styles.css" text="HOLA">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnListaAfiliados" mnemonicParsing="false" onAction="#btnListaAfiliadosAction" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnListaMascotas" mnemonicParsing="false" onAction="#btnListaMascotasAction" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnListaBeneficios" mnemonicParsing="false" onAction="#btnListaBeneficiosAction" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnListaContratosPorEjecutivo" mnemonicParsing="false" onAction="#btnListaContratosPorEjecutivoAction" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnAfiliadosMascotas" mnemonicParsing="false" onAction="#btnAfiliadosMascotasAction" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnAfiliadosMascotasMayores5" mnemonicParsing="false" onAction="#btnAfiliadosMascotasMayores5Action" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnTotalFacturasAfiliado" mnemonicParsing="false" onAction="#btnTotalFacturasAfiliadoAction" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="PDF">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="btn-actualizar" />
+                           </styleClass>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="800.0">
+               <children>
+                  <Button fx:id="btnAtras" mnemonicParsing="false" onAction="#btnAtras" prefHeight="29.0" prefWidth="99.0" stylesheets="@../css/styles.css" text="Atras">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="btn-actualizar" />
+                     </styleClass>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <HBox prefHeight="67.0" prefWidth="557.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

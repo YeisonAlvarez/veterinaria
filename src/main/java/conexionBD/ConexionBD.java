@@ -40,8 +40,9 @@ public class ConexionBD {
 		return instance;
 	}
 
-	public Connection getConnection() {
-		return connection;
-	}
 
+
+	public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/veterinaria", "root", "12345");
+    }
 }
